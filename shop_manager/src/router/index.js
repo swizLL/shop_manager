@@ -30,7 +30,31 @@ const routes = [
   {
     path: '/home',
     name: 'Home',
-    component: () => import('@/views/Home.vue')
+    component: () => import('@/views/Home.vue'),
+    children: [
+      // 当请求home的时候 默认的直接重定向到welcome二级路由
+      {
+        path: '/home',
+        redirect: '/welcome'
+      },
+      {
+        path: '/welcome',
+        component: () => import('@/views/Welcome.vue')
+      },
+      {
+        path:'/users',
+        component:()=>import('@/components/Users')
+      },
+      {
+        path:'/rights',
+        component:()=>import('@/components/Privilge')
+      }
+      ,
+      {
+        path:'/rights',
+        component:()=>import('@/components/Privilge/role.vue')
+      }
+    ]
   }
 ]
 

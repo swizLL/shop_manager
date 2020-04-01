@@ -81,7 +81,6 @@ export default {
       const _this = this;
       //在发送登录请求之前 必须通过验证规则
       this.$refs.loginFormRef.validate(async function(validate, object) {
-        console.log(validate);
         if (!validate) {
           //如果校验不通过，则直接退出，不执行后续代码
           return

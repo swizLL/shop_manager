@@ -6,7 +6,23 @@ import {
     Form,
     FormItem,
     Input,
-    Message
+    Message,
+    Container,
+    Header,
+    Aside,
+    Main,
+    RadioGroup,
+    RadioButton,
+    Menu,
+    Submenu,
+    MenuItem,
+    Breadcrumb,
+    BreadcrumbItem,
+    Table,
+    TableColumn,
+    Switch,
+    Pagination,
+    Col
 } from 'element-ui'
 
 Vue.use(Button)
@@ -15,5 +31,21 @@ Vue.use(Row)
 Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Input)
+Vue.use(Container)
+Vue.use(Header)
+Vue.use(Aside)
+Vue.use(Main)
+Vue.use(RadioGroup)
+Vue.use(RadioButton)
+Vue.use(Menu)
+Vue.use(Submenu)
+Vue.use(MenuItem)
+Vue.use(Breadcrumb)
+Vue.use(BreadcrumbItem)
+Vue.use(Table)
+Vue.use(TableColumn)
+Vue.use(Switch)
+Vue.use(Pagination)
+Vue.use(Col)
 //将message组件挂载到VUE对象，作为全局属性
 Vue.prototype.$msg=Message
