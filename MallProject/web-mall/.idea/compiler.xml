@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mall_common_services" />
+        <module name="mall_common" />
+        <module name="mall_service_goods" />
+        <module name="mall_common_interface" />
+        <module name="mall_common_web" />
+        <module name="mall_web_manager" />
+        <module name="mall_pojo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mall_common_service" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
